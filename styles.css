@@ -120,7 +120,7 @@ main {
 }
 
 .card__body {
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -181,8 +181,9 @@ main {
 
 .btn {
   border: none;
-  padding: 0.75rem;
+  padding: 1rem;
   font-weight: var(--fw-black);
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -206,4 +207,14 @@ main {
 .btn--secondary:hover,
 .btn--secondary:focus {
   color: var(--clr-neutral-800);
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    max-width: 450px;
+  }
+
+  .card__body {
+    padding-inline: 2.5rem;
+  }
 }
